@@ -1,42 +1,13 @@
-# PHP-Calculator
-Simple PHP Calculator to use and do Unit testing, Fuzz testing
+# Simple Calculator with PHPUnit Unit Tests
 
-Usage:
-use your webserver and visit /app/index.php to get the web UI
+This project is a basic calculator built in PHP, designed to practice and experiment with PHPUnit unit testing. The purpose of the project is to learn how to write and run tests for mathematical operations such as addition, subtraction, multiplication, and division.
 
-Unit testing: 
-a) run phpunit test installed via shell cmd: 
-bash: vendor/bin/phpunit
-should return No tests executed! if you are just starting, i.e. no tests are developed
+## Features
 
-b) when a test is ready, run same bash cmd:
-vendor/bin/phpunit
+- Addition, subtraction, multiplication, and division operations.
+- PHPUnit unit tests to validate the correctness of each operation.
+- Easy-to-understand code to help with learning PHP and testing.
 
-it's probably more interesting to see the output with methods tested and to do this you can issue
-the following cmd:
-bash: vendor/bin/phpunit --testdox
+## Usage
+    - ./vendor/bin/phpunit --testdox
 
-It works nice if the tests are well descriptive:
-ClassName
- - methodName
-   - Test case description
-
-So, the test with key --testdox
-would output a kind of something like this for a test like "tests/CalculatorTest.php":
-PHPUnit 9.6.13 by Sebastian Bergmann and contributors.
-
-Calculator
- ✔ Add
-
-Time: 00:00.038, Memory: 6.00 MB
-
-OK (1 test, 1 assertion)
--------------
-
-Fuzz test PHP:
-run fuzz_test.php from bash or your favourite terminal
-![See fuzz testing in action and compare the results with web ui of the PHP calculator](comparing-the-result-from-the-webbrowser-with-one-of-the-fuzz-tests.png)
-
-Notes:
-- PHP 7.3 compatibility
-- Newer phpunit xmlns:xsi declaration (see previous in phpunit.xml.bak)
